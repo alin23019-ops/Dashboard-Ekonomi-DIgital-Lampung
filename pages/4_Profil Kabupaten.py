@@ -4,7 +4,7 @@ import pandas as pd
 st.set_page_config(layout="wide")
 
 # === LOAD DATA ===
-df = pd.read_csv("D:\\projek magang\\hasil_implikasi_pasar.csv", sep=";")
+df = pd.read_csv("hasil_implikasi_pasar.csv", sep=";")
 df.columns = df.columns.str.strip()
 
 st.title("📍 Profil Kabupaten/Kota")
@@ -59,3 +59,4 @@ with col2:
     st.write(f"- Konsumsi Dominan: **{d['Konsumsi_Dominan']}**")
     st.write(f"- Kondisi Pasar Digital: **{kondisi_pasar}**")
     st.write(f"- Saran Pengembangan Pasar: **{saran_pasar}**")
+
