@@ -3,7 +3,7 @@ import pandas as pd
 
 st.set_page_config(layout="wide")
 
-df = pd.read_csv("D:\\projek magang\\hasil_implikasi_pasar.csv", sep=";")
+df = pd.read_csv("hasil_implikasi_pasar.csv", sep=";")
 df.columns = df.columns.str.strip()
 
 st.title("🔎 Ringkasan Umum")
@@ -46,3 +46,4 @@ masih cenderung **bersifat konsumtif**, sementara pemanfaatan internet
 sebagai sarana produksi dan pemasaran oleh pelaku usaha
 belum optimal.
 """)
+
